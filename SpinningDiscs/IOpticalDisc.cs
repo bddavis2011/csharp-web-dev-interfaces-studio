@@ -4,11 +4,11 @@ using System.Text;
 
 namespace SpinningDiscs
 {
-    public class IOpticalDisc
+    public abstract class IOpticalDisc
     {
-        void SpinDisc();
-        void StoreData();
-        void ReadData();
-        void WriteData();
+        public abstract void SpinDisc();
+        public abstract void StoreData();
+        public abstract void ReadData();
+        public abstract void WriteData();
     }
 }
