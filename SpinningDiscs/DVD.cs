@@ -1,16 +1,12 @@
 ﻿using System;
 namespace SpinningDiscs
 {
-    public class DVD
+    public class DVD: BaseDisc
     {
-        public interface IDVD
+        public bool IsVideo { get; set; }
+        public DVD(string name, int storageCap, int speed, string content) : base(name, storageCap, speed, content)
         {
-            double SpinDisc();
-            double StorageCap();
-
-            string DataType();
-
-            double PitSpace();
+            IsVideo = true;
         }
         // TODO: Implement your custom interface.
 
